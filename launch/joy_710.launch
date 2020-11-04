@@ -1,0 +1,6 @@
+<launch>
+
+  <node pkg="joy" type="joy_node" name="joy" />
+  <node pkg="wru" type="joy_710_twist.py" name="joy_710_twist" />
+
+</launch>
