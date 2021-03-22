@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="uvc_camera" name="uvc_camera" type="uvc_camera_node">
+    <param name="width" type="int" value="640"/>
+    <param name="height" type="int" value="480"/>
+  </node>
+</launch>
+
