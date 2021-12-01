@@ -1,0 +1,413 @@
+ CUDNN_HALF=1 
+Demo
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 0 K-images (0 Kilo-batches_64) 
+Webcam index: 0
+Video stream: 1920 x 1080 
+Objects:
+
+
+FPS:0.0 	 AVG_FPS:0.0
+Objects:
+
+OBJ:mouse:0.855 : 595: 619: 338: 218:0
+OBJ:mouse:0.813 :1146: 533: 416: 213:0
+OBJ:diningtable:0.656 : 191: 544:1824: 507:0
+OBJ:person:0.858 :  18:   0:1313: 785:0
+
+FPS:0.5 	 AVG_FPS:0.0
+Objects:
+
+OBJ:mouse:0.776 :1133: 540: 440: 210:0
+OBJ:mouse:0.757 : 600: 617: 333: 222:0
+OBJ:diningtable:0.691 : 186: 549:1835: 500:0
+OBJ:person:0.865 :  13:   0:1319: 807:0
+
+FPS:0.7 	 AVG_FPS:0.0
+Objects:
+
+OBJ:mouse:0.857 : 593: 619: 338: 220:0
+OBJ:mouse:0.760 :1134: 540: 439: 209:0
+OBJ:diningtable:0.658 : 189: 550:1832: 498:0
+OBJ:person:0.881 :  22:   0:1305: 800:0
+
+FPS:1.1 	 AVG_FPS:0.0
+Objects:
+
+OBJ:mouse:0.805 : 595: 618: 337: 220:0
+OBJ:mouse:0.778 :1134: 540: 438: 210:0
+OBJ:diningtable:0.677 : 199: 549:1812: 498:0
+OBJ:person:0.868 :  23:   0:1310: 790:0
+
+FPS:1.1 	 AVG_FPS:0.0
+Objects:
+
+OBJ:mouse:0.824 : 595: 618: 340: 220:0
+OBJ:mouse:0.787 :1139: 541: 430: 208:0
+OBJ:diningtable:0.710 : 190: 550:1828: 498:0
+OBJ:knife:0.260 :1218: 788: 122: 287:0
+OBJ:person:0.836 :  13:   0:1324: 790:0
+
+FPS:1.2 	 AVG_FPS:0.0
+Objects:
+
+OBJ:mouse:0.845 : 591: 617: 345: 222:0
+OBJ:mouse:0.840 :1136: 541: 437: 208:0
+OBJ:diningtable:0.619 : 191: 543:1824: 511:0
+OBJ:person:0.815 :  11:   0:1333: 800:0
+
+FPS:1.3 	 AVG_FPS:0.0
+Objects:
+
+OBJ:mouse:0.829 : 594: 619: 343: 218:0
+OBJ:mouse:0.796 :1139: 541: 431: 207:0
+OBJ:diningtable:0.651 : 181: 540:1847: 514:0
+OBJ:knife:0.320 :1217: 788: 122: 287:0
+OBJ:person:0.828 :  20:   4:1312: 787:0
+
+FPS:1.7 	 AVG_FPS:0.0
+Objects:
+
+OBJ:mouse:0.858 :1147: 531: 409: 213:0
+OBJ:mouse:0.771 : 592: 619: 343: 218:0
+OBJ:diningtable:0.665 : 196: 542:1816: 511:0
+OBJ:person:0.883 :  13:   0:1324: 787:0
+
+FPS:1.6 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.833 : 595: 621: 338: 216:0
+OBJ:mouse:0.773 :1133: 540: 435: 211:0
+OBJ:diningtable:0.654 : 194: 540:1819: 514:0
+OBJ:person:0.890 :  22:   7:1308: 774:0
+
+FPS:1.6 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.859 : 606: 619: 334: 221:0
+OBJ:diningtable:0.527 : 201: 557:1805: 494:0
+OBJ:hot dog:0.340 : 311: 374: 379: 159:0
+OBJ:knife:0.261 :1218: 791: 120: 286:0
+OBJ:bottle:0.461 :  37: 640:  91:  86:0
+OBJ:person:0.446 : 268:   7:1107: 755:0
+
+FPS:1.7 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.814 : 616: 608: 338: 223:0
+OBJ:mouse:0.620 :1137: 540: 437: 207:0
+OBJ:diningtable:0.575 : 210: 560:1787: 488:0
+OBJ:knife:0.286 :1221: 791: 120: 286:0
+OBJ:bottle:0.513 :  37: 639:  90:  86:0
+OBJ:bottle:0.392 : 122: 638:  86:  79:0
+OBJ:bottle:0.277 : 216: 591:  67: 106:0
+OBJ:person:0.649 : 270:   0:1146: 814:0
+
+FPS:2.1 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.738 :1132: 537: 437: 211:0
+OBJ:mouse:0.522 : 612: 618: 338: 222:0
+OBJ:diningtable:0.550 : 212: 556:1784: 496:0
+OBJ:knife:0.260 :1221: 790: 122: 287:0
+OBJ:bottle:0.422 :  38: 642:  89:  83:0
+OBJ:bottle:0.329 : 123: 639:  86:  76:0
+OBJ:person:0.583 : 239:   0:1198: 823:0
+
+FPS:2.0 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.953 : 605: 609: 350: 224:0
+OBJ:mouse:0.441 :1133: 541: 426: 207:0
+OBJ:diningtable:0.494 : 208: 550:1794: 503:0
+OBJ:bottle:0.456 :  38: 641:  90:  84:0
+OBJ:bottle:0.404 : 125: 637:  90:  81:0
+OBJ:person:0.651 : 237:   0:1178: 813:0
+
+FPS:2.0 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.960 : 608: 610: 352: 226:0
+OBJ:mouse:0.345 :1134: 541: 426: 206:0
+OBJ:diningtable:0.468 : 209: 554:1798: 497:0
+OBJ:knife:0.332 :1220: 791: 121: 288:0
+OBJ:person:0.758 :   0:   0:1344: 792:0
+
+FPS:2.3 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.979 : 608: 611: 355: 224:0
+OBJ:mouse:0.428 :1138: 542: 421: 203:0
+OBJ:diningtable:0.525 : 207: 557:1802: 493:0
+OBJ:knife:0.308 :1219: 793: 122: 283:0
+OBJ:person:0.711 :   6:   6:1309: 775:0
+
+FPS:2.3 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.972 : 607: 611: 355: 225:0
+OBJ:mouse:0.431 :1137: 542: 420: 205:0
+OBJ:diningtable:0.513 : 208: 552:1799: 501:0
+OBJ:knife:0.387 :1219: 791: 122: 286:0
+OBJ:person:0.771 :  18:  12:1278: 765:0
+
+FPS:2.6 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.969 : 612: 610: 350: 226:0
+OBJ:mouse:0.479 :1134: 543: 425: 203:0
+OBJ:diningtable:0.424 : 207: 549:1801: 506:0
+OBJ:knife:0.357 :1220: 791: 120: 286:0
+OBJ:person:0.797 :  25:  12:1269: 768:0
+
+FPS:2.9 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.972 : 613: 610: 349: 225:0
+OBJ:mouse:0.468 :1134: 543: 422: 204:0
+OBJ:diningtable:0.412 : 218: 547:1783: 511:0
+OBJ:knife:0.325 :1220: 790: 121: 286:0
+OBJ:person:0.737 :  16:  16:1287: 763:0
+
+FPS:2.7 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.977 : 609: 609: 354: 226:0
+OBJ:mouse:0.481 :1158: 525: 394: 220:0
+OBJ:diningtable:0.440 : 216: 554:1786: 500:0
+OBJ:knife:0.407 :1218: 789: 122: 286:0
+OBJ:person:0.829 :  16:  13:1284: 759:0
+
+FPS:2.7 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.975 : 611: 612: 350: 223:0
+OBJ:mouse:0.505 :1160: 528: 392: 216:0
+OBJ:diningtable:0.408 : 215: 554:1792: 498:0
+OBJ:person:0.819 :   7:   6:1302: 773:0
+
+FPS:2.9 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.968 : 612: 610: 350: 226:0
+OBJ:mouse:0.473 :1139: 542: 416: 204:0
+OBJ:diningtable:0.412 : 222: 553:1774: 498:0
+OBJ:knife:0.277 :1221: 790: 119: 288:0
+OBJ:person:0.808 :  14:   5:1287: 774:0
+
+FPS:2.9 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.958 : 608: 611: 351: 225:0
+OBJ:mouse:0.432 :1157: 528: 393: 218:0
+OBJ:diningtable:0.442 : 214: 554:1788: 498:0
+OBJ:knife:0.289 :1219: 789: 117: 291:0
+OBJ:person:0.793 :  15:  10:1292: 770:0
+
+FPS:2.9 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.977 : 609: 613: 351: 223:0
+OBJ:mouse:0.466 :1158: 528: 389: 217:0
+OBJ:diningtable:0.440 : 228: 547:1765: 508:0
+OBJ:person:0.816 :  10:   5:1290: 778:0
+
+FPS:2.8 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.972 : 613: 612: 349: 225:0
+OBJ:mouse:0.533 :1137: 543: 416: 202:0
+OBJ:diningtable:0.449 : 219: 553:1783: 499:0
+OBJ:knife:0.291 :1218: 790: 120: 288:0
+OBJ:person:0.771 :  16:   8:1297: 774:0
+
+FPS:3.0 	 AVG_FPS:2.5
+Objects:
+
+OBJ:mouse:0.978 : 610: 611: 351: 225:0
+OBJ:mouse:0.554 :1137: 543: 417: 201:0
+OBJ:diningtable:0.357 : 220: 546:1780: 511:0
+OBJ:knife:0.280 :1220: 790: 120: 288:0
+OBJ:person:0.757 :  29:   2:1272: 777:0
+
+FPS:3.0 	 AVG_FPS:2.8
+Objects:
+
+OBJ:mouse:0.976 : 610: 612: 352: 225:0
+OBJ:mouse:0.457 :1135: 543: 420: 202:0
+OBJ:diningtable:0.399 : 221: 552:1774: 503:0
+OBJ:cat:0.292 :   0: 514: 221: 113:0
+OBJ:person:0.758 :  23:  18:1273: 754:0
+
+FPS:3.2 	 AVG_FPS:2.8
+Objects:
+
+OBJ:mouse:0.976 : 612: 611: 351: 225:0
+OBJ:mouse:0.457 :1138: 542: 416: 203:0
+OBJ:diningtable:0.439 : 220: 554:1778: 499:0
+OBJ:knife:0.306 :1218: 790: 121: 286:0
+OBJ:person:0.752 :  25:  18:1261: 757:0
+
+FPS:3.1 	 AVG_FPS:2.8
+Objects:
+
+OBJ:mouse:0.978 : 610: 611: 352: 225:0
+OBJ:mouse:0.537 :1138: 541: 413: 203:0
+OBJ:diningtable:0.438 : 217: 552:1783: 501:0
+OBJ:knife:0.367 :1217: 792: 122: 285:0
+OBJ:person:0.772 :  29:   8:1257: 771:0
+
+FPS:3.1 	 AVG_FPS:2.8
+Objects:
+
+OBJ:mouse:0.985 : 608: 610: 355: 226:0
+OBJ:mouse:0.540 :1137: 542: 413: 205:0
+OBJ:diningtable:0.417 : 229: 552:1763: 499:0
+OBJ:knife:0.325 :1219: 791: 121: 287:0
+OBJ:person:0.828 :  33:   1:1244: 781:0
+
+FPS:2.9 	 AVG_FPS:2.8
+Objects:
+
+OBJ:mouse:0.976 : 610: 612: 351: 225:0
+OBJ:mouse:0.496 :1138: 543: 414: 203:0
+OBJ:diningtable:0.495 : 225: 556:1770: 493:0
+OBJ:knife:0.332 :1216: 792: 121: 282:0
+OBJ:person:0.756 :  14:   2:1290: 783:0
+
+FPS:2.9 	 AVG_FPS:2.8
+Objects:
+
+OBJ:mouse:0.981 : 612: 610: 349: 227:0
+OBJ:mouse:0.490 :1159: 529: 389: 214:0
+OBJ:diningtable:0.435 : 228: 554:1765: 499:0
+OBJ:knife:0.265 :1216: 790: 125: 287:0
+OBJ:person:0.767 :  23:  10:1278: 768:0
+
+FPS:3.1 	 AVG_FPS:2.8
+Objects:
+
+OBJ:mouse:0.975 : 612: 610: 347: 226:0
+OBJ:mouse:0.566 :1141: 543: 410: 201:0
+OBJ:diningtable:0.498 : 220: 558:1780: 490:0
+OBJ:knife:0.317 :1219: 792: 122: 284:0
+OBJ:person:0.768 :  18:   1:1290: 786:0
+
+FPS:2.9 	 AVG_FPS:2.8
+Objects:
+
+OBJ:mouse:0.967 : 613: 612: 347: 225:0
+OBJ:mouse:0.417 :1136: 542: 420: 203:0
+OBJ:diningtable:0.468 : 225: 557:1772: 493:0
+OBJ:knife:0.370 :1215: 791: 123: 281:0
+OBJ:person:0.754 :  25:   0:1274: 788:0
+
+FPS:2.8 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.839 :1134: 530: 378: 223:0
+OBJ:mouse:0.434 : 584: 616: 351: 237:0
+OBJ:knife:0.347 :1215: 790: 126: 282:0
+OBJ:person:0.873 :   0:   0:1349: 833:0
+
+FPS:2.8 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.577 : 592: 623: 335: 224:0
+OBJ:knife:0.353 :1220: 794: 119: 279:0
+OBJ:person:0.766 :   0:  56:1343: 800:0
+
+FPS:3.0 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.758 : 588: 618: 346: 234:0
+OBJ:knife:0.308 :1219: 792: 122: 284:0
+OBJ:handbag:0.323 :1151: 532: 418: 210:0
+OBJ:person:0.819 :   0:  63:1337: 790:0
+
+FPS:2.8 	 AVG_FPS:2.2
+Objects:
+
+OBJ:knife:0.258 :1217: 791: 121: 285:0
+OBJ:handbag:0.365 :1153: 530: 415: 218:0
+OBJ:person:0.821 :   0:   0:1373: 791:0
+
+FPS:2.7 	 AVG_FPS:2.2
+Objects:
+
+OBJ:handbag:0.439 :1148: 533: 419: 214:0
+OBJ:person:0.826 :   0:  65:1385: 778:0
+
+FPS:2.7 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.263 : 589: 614: 331: 241:0
+OBJ:backpack:0.305 :1152: 529: 418: 219:0
+OBJ:person:0.810 :   0:   6:1356: 784:0
+
+FPS:2.9 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.413 : 588: 613: 333: 242:0
+OBJ:handbag:0.513 :1149: 532: 419: 215:0
+OBJ:person:0.866 :   0:   0:1363: 801:0
+
+FPS:3.1 	 AVG_FPS:2.2
+Objects:
+
+OBJ:mouse:0.431 : 589: 611: 332: 245:0
+OBJ:backpack:0.254 :1150: 533: 422: 211:0
+OBJ:person:0.843 :   0:   0:1363: 793:0
+
+FPS:3.0 	 AVG_FPS:2.4
+Objects:
+
+OBJ:mouse:0.886 :1137: 540: 438: 207:0
+OBJ:mouse:0.469 : 602: 621: 331: 223:0
+OBJ:diningtable:0.495 : 190: 544:1825: 510:0
+OBJ:person:0.817 :  41:   0:1264: 783:0
+
+FPS:2.9 	 AVG_FPS:2.4
+Objects:
+
+OBJ:mouse:0.871 :1141: 538: 436: 210:0
+OBJ:handbag:0.255 :1141: 531: 427: 216:0
+OBJ:mouse:0.293 : 603: 620: 334: 226:0
+OBJ:diningtable:0.312 : 181: 524:1845: 543:0
+OBJ:person:0.874 :  85:   0:1169: 807:0
+
+FPS:3.1 	 AVG_FPS:2.4
+Objects:
+
+OBJ:mouse:0.848 :1139: 538: 438: 210:0
+OBJ:handbag:0.256 :1137: 532: 434: 216:0
+OBJ:diningtable:0.319 : 195: 527:1820: 537:0
+OBJ:person:0.790 :  64:   0:1216: 790:0
+
+FPS:3.1 	 AVG_FPS:2.4
+Objects:
+
+OBJ:mouse:0.867 :1139: 539: 441: 209:0
+OBJ:mouse:0.270 : 596: 621: 340: 229:0
+OBJ:diningtable:0.272 : 186: 525:1836: 540:0
+OBJ:person:0.760 :  58:   0:1208: 778:0
+
+FPS:3.0 	 AVG_FPS:2.4
+Objects:
+
+OBJ:mouse:0.869 :1137: 538: 441: 211:0
+OBJ:handbag:0.251 :1133: 535: 439: 213:0
+OBJ:diningtable:0.258 : 186: 519:1836: 549:0
+OBJ:person:0.780 :  47:   0:1231: 789:0
+
+FPS:2.9 	 AVG_FPS:2.4
+Objects:
+
+OBJ:mouse:0.871 :1137: 539: 441: 209:0
+OBJ:person:0.803 :  44:   0:1234: 793:0

@@ -1,7 +1,16 @@
 #!/usr/bin/env python
-#
+#######################################################################
 # playing mp3 sound file in ROS
-#
+#    2021-11-30 T.Wakita  
+#######################################################################
+#   installation:
+#     sudo apt install mpg123
+#     prepare mp3 file
+#   usage:
+#     rosrun wru sound_pp.py
+#   IN:
+#      /sound_pp (mp3 file path)
+
 
 import rospy
 import time
