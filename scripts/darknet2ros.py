@@ -24,7 +24,7 @@ bb=BoundingBoxes()
 while not rospy.is_shutdown():
     F=sys.stdin
     s=F.readline()
-    if s.find('FPS') == 0:
+    if s.find('Objects') == 0:
         pub.publish(bb)        
         bb=BoundingBoxes()
         ss=ss+1
