@@ -41,5 +41,3 @@ while not rospy.is_shutdown():
         b.ymax = int(r[4])+int(r[6])
         bb.bounding_boxes.append(b)
 
-    rate.sleep()
-    
