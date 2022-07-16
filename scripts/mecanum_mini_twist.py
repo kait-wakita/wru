@@ -20,7 +20,7 @@ class VelTwist(object):
 
 if __name__ == '__main__':
     rospy.init_node('mecanum_mini_twist')
-    serv_address = ('192.168.1.4', 8888)
+    serv_address = ('192.168.1.4', 8888) # change IP address to proper address
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
     color = VelTwist()
