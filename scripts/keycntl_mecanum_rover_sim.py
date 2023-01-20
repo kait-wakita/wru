@@ -7,7 +7,8 @@ import time
 import numpy as np
 
 rospy.init_node('keyboard_cmd_vel')
-pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+#pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+pub = rospy.Publisher('/rover_twist', Twist, queue_size=10)
 
 
 def move_diagonal(vx,vy,duration):
@@ -28,7 +29,7 @@ def rotate_excenter(h, vxy, omega):
     # vxy: 平行移動時の速度
     # omega: 回転時の速度
     vel = Twist()
-    real_time_factor = 1.00  #  シミュレータ用の速度、実機の場合1.0
+    real_time_factor = 0.65  #  シミュレータ用の速度、実機の場合1.0
 
     vel.linear.x = vxy
     if omega < 0:
@@ -55,7 +56,7 @@ def rotate_excenter_fine(h, omega):
     # 　omega: 回転時の速度
     vel = Twist()
 
-    real_time_factor = 1.00  #  シミュレータ用の速度、実機の場合1.0
+    real_time_factor = 0.65  #  シミュレータ用の速度、実機の場合1.0
 
     duration =  abs(np.pi / 2 / omega) / real_time_factor
     vel.angular.z = omega
