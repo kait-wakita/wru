@@ -7,6 +7,7 @@ import time
 import numpy as np
 
 rospy.init_node('keyboard_cmd_vel')
+#pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
 pub = rospy.Publisher('/rover_twist', Twist, queue_size=10)
 
 
@@ -23,11 +24,12 @@ def move_diagonal(vx,vy,duration):
 
 
 def rotate_excenter(h, vxy, omega):
-    # h: 車両回転中心から実際の回転中心までの距離
+    # 90度回転
+    #    # h: 車両回転中心から実際の回転中心までの距離
     # vxy: 平行移動時の速度
     # omega: 回転時の速度
     vel = Twist()
-    real_rate = 1.35
+    real_time_factor = 0.65  #  シミュレータ用の速度、実機の場合1.0
 
     vel.linear.x = vxy
     if omega < 0:
@@ -36,49 +38,27 @@ def rotate_excenter(h, vxy, omega):
         vel.linear.y = -vxy
     vel.angular.z = 0
     pub.publish(vel)
-    time.sleep(real_rate * h / vxy)
+    time.sleep(h / vxy / real_time_factor)
 
     vel.linear.x = 0
     vel.linear.y = 0
     vel.angular.z = omega
     pub.publish(vel)
-    time.sleep( real_rate * abs((np.pi / 2) / omega))
+    time.sleep(abs((np.pi / 2) / omega) / real_time_factor)
 
     vel.angular.z = 0
     pub.publish(vel)   
 
 
-# def rotate_excenter_fine(h, dummy, omega):
-#     # h: 車両回転中心から実際の回転中心までの距離
-#     # vxy: 平行移動時の速度
-#     # omega: 回転時の速度
-#     vel = Twist()
-#     real_rate = 1.0
-#     duration = real_rate * abs(np.pi / 2 / omega)
-#     dt = 0.1
-#     theta = 0.0
-
-#     for t in np.arange(0, duration, dt):
-#         vel.angular.z = omega
-#         vel.linear.x =  h + np.sin(theta) * omega
-#         vel.linear.y = -h * np.cos(theta) * omega
-#         theta = theta + omega * dt
-#         pub.publish(vel)   
-#         time.sleep(dt)
-
-#     vel.linear.x = 0
-#     vel.linear.y = 0
-#     vel.angular.z = 0
-    # pub.publish(vel)   
-
-
-def rotate_excenter_fine(h, dummy, omega):
-    # h: 車両回転中心から実際の回転中心までの距離
-    # omega: 回転時の速度
+def rotate_excenter_fine(h, omega):
+    # 90度回転
+    # 　h: 車両回転中心から実際の回転中心までの距離
+    # 　omega: 回転時の速度
     vel = Twist()
 
-    real_rate = 1.3
-    duration = real_rate * abs(np.pi / 2 / omega)
+    real_time_factor = 0.65  #  シミュレータ用の速度、実機の場合1.0
+
+    duration =  abs(np.pi / 2 / omega) / real_time_factor
     vel.angular.z = omega
     vel.linear.x =  0
     vel.linear.y =  - h * omega
@@ -94,7 +74,7 @@ def rotate_excenter_fine(h, dummy, omega):
 
 while not rospy.is_shutdown():
     vel=Twist()
-    direction = raw_input('w:fwd z:bwd a:left d:right e:c-clock r:clock Enter:stop q:quit> ')
+    direction = raw_input('w:前 z:後 a:左 d:右 e:反時計 r:時計 Enter:停止 q:quit> ')
     v_std = 0.3
     if 'w' in direction: vel.linear.x = v_std
     if 'z' in direction: vel.linear.x = -v_std
@@ -102,10 +82,10 @@ while not rospy.is_shutdown():
     if 'd' in direction: vel.linear.y = -v_std
     if 'e' in direction: vel.angular.z = np.pi / 8
     if 'r' in direction: vel.angular.z = -np.pi / 8
-    if 'E' in direction: rotate_excenter_fine(1.0, v_std, np.pi / 4)
-    if 'R' in direction: rotate_excenter_fine(1.0, v_std, -np.pi / 4)
-    if '1' in direction: move_diagonal(v_std, v_std, 1.3 / v_std)
-    if '3' in direction: move_diagonal(v_std,-v_std, 1.3/ v_std)
+    if 'E' in direction: rotate_excenter_fine(1.0, np.pi / 4)
+    if 'R' in direction: rotate_excenter_fine(1.0, -np.pi / 4)
+    if '1' in direction: move_diagonal(v_std, v_std, 1.0)
+    if '3' in direction: move_diagonal(v_std,-v_std, 1.0)
     if 'q' in direction: break
     print vel
     pub.publish(vel)
